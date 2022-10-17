@@ -1,0 +1,194 @@
+/*
+Contents of this stylesheet:
+
+1. The fonts
+2. Noscroll while sidebar open
+3. Removing the text decoration of anchor tag
+4. Flex property class
+5. Logo text which is in the navbar : font
+6. Logo image which is on the navbar : width, margin left
+7. Additional property of logo n logoimage in navbar : flex and gap between them (parent class of both logo-text and logo-image)
+8. Properties of navbar : sticky, background color etc
+9. Properties of list items in navmenu : removing the listing style (points before the text)
+10. Various navmenu properties
+11. Toggle button properties
+12. Quote on the menubar (in the bottom of the sidebar when opened in mobile view)
+13. Media query : Hiding the logo text in navbar when the screen width is less than 180px
+14. Media query : For responsiveness (screens with width less than 650px)
+
+15. Footer
+
+*/
+
+@font-face { font-family: "logo"; src: url(../fonts/logo.ttf); }
+@font-face { font-family: "about"; src: url(../fonts/about.ttf); }
+@font-face { font-family: "quotes"; src: url(../fonts/quotes.ttf);}
+@font-face { font-family: "normaltext"; src: url(../fonts/normaltext.ttf);}
+body {
+    margin: 0;
+    font-family: normaltext;
+}
+/* For stoppinf the scroll when sidebar is open in mobile view*/
+.noscroll {
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+.logotext {
+    font-family: logo;
+    color: #000;
+}
+.logoimage {
+    width: 1.5em;
+    margin-left: 1em;
+}
+.logo-n-name {
+    display: flex;
+    gap:var(--gap, 0.5em)
+}
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff00;
+    position: sticky;
+    transition: top 0.4s;
+    padding: 1rem;
+    border-radius: 1em;
+    margin: 0.25em;
+}
+.navmenu {
+    list-style: none;
+    margin: 0;
+}
+.navmenuspacebetween {
+    gap: var(--gap, 1rem);
+}
+.navmenu li a {
+    color: #000000;
+}
+
+.navmenu li a:hover {
+    cursor: pointer;
+    text-decoration: underline #000000;
+}
+.navmenu li a.active {
+    color: #ffff00;
+    background-color: #000000;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 1em;
+}
+.togglebutton {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99999;
+    right: 2em;
+    top: 1.2em;
+}
+.bar1, .bar2, .bar3 {
+    width: 1em;
+    aspect-ratio:10;
+    background-color: #000000;
+    margin: 0.2em 0;
+    transition: 0.2s;
+}
+  
+.change .bar1 {
+    transform:rotate(180deg);
+    opacity: 0;
+}
+
+.change .bar2 {
+    transform:rotate(180deg);
+}
+  
+.change .bar3 {
+    transform:rotate(180deg);
+    opacity: 0;
+}
+
+.quoteonmenubar {
+    display: none;
+    font-size:smaller;
+    color: #ff0000;
+    font-family: quotes;
+    padding-top: 4em;
+}
+
+
+/* For mobile view (Responsive)*/
+@media (max-width: 180px) {
+    .logotext {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .navmenu {
+        text-align: center;
+        position: fixed;
+        height: 100%;
+        z-index: 1000;
+        inset: 0 0 0 0%;
+        background-color: #ffff00;
+        flex-direction: column;
+        padding: min(25vh, 8rem) 0rem;
+        transform: translateX(100%);
+        transition: 0.2s ease;
+    }
+    .navmenuspacebetween {
+        gap: var(--gap, 1rem);
+    }
+    .navmenu li a{
+        font-size:1.2rem;
+    }
+    .navmenu li a:hover {
+        text-decoration:underline;
+    }
+    .navmenu li a.active {
+        text-decoration: none;
+    }
+    .navmenu[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    .togglebutton {
+        display: block;
+    }
+    .quoteonmenubar {
+        display: block;
+    }
+    /* To reduce the gap between the sidebar menu for screens height less than 470px*/
+    @media (max-height: 470px) {
+        .navmenuspacebetween {
+            gap: var(--gap, 0.8rem);
+        }
+        .quoteonmenubar {
+            padding: 0;
+        }
+    }
+    @media (max-height: 370px) {
+        .navmenuspacebetween {
+            gap: var(--gap, 0rem);
+        }
+        .quoteonmenubar {
+            padding: 0;
+        }
+    }
+}
+
+
+
+/* Footer of every page*/
+.footer {
+    text-align: center;
+    font-size: x-small;
+    padding: 1em;
+}
+.footerlogo {
+    width: 10em;
+    aspect-ratio: 1;
+}

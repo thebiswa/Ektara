@@ -1,0 +1,75 @@
+h1.ektarabrandname {
+    font-family: logo;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.8em;
+}
+p.about {
+    font-family: about;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+.containerforcards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards {
+    background: #ffffff;
+    width: 16rem;
+    height: 24rem;
+    margin: 2em;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.374);
+    transition: 0.3s;
+}
+.cards:hover {
+    box-shadow: 2px 2px 5px 1px rgb(255, 213, 0);
+}
+.imageoncard {
+    width: 100%;
+    aspect-ratio: 2;
+    background-color: blanchedalmond;
+}
+@media screen and (max-width: 960px) {
+    .cards {
+        width: 14rem;
+        height: 22rem;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cards {
+        width: 15rem;
+        height: 22rem;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 18rem;
+        height: 25rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .cards {
+        width: 12rem;
+        height: fit-content;
+    }
+}
+.titleofcard {
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 0;
+    color: darkred;
+    text-indent: 1rem;
+}
+.textoncard {
+    text-align: justify;
+    padding: 1em;
+    padding-top: 0;
+    color: rgb(0, 0, 0);
+}
