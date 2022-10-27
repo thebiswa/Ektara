@@ -36,28 +36,21 @@ p.about {
 }
 @media screen and (max-width: 960px) {
     .cards {
-        width: 14rem;
+        width: 25%;
         height: 24rem;
-        
     }
 }
 
 @media screen and (max-width: 850px) {
     .cards {
-        width: 15rem;
+        width: 36%;
         height: 24rem;
         
     }
 }
 @media screen and (max-width: 600px) {
     .cards {
-        width: 18rem;
-        height: fit-content;
-    }
-}
-@media screen and (max-width: 300px) {
-    .cards {
-        width: 12rem;
+        width: fit-content;
         height: fit-content;
     }
 }
