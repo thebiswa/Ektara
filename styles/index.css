@@ -50,7 +50,7 @@ p.about {
 }
 @media screen and (max-width: 600px) {
     .cards {
-        width: fit-content;
+        width: 75%;
         height: fit-content;
     }
 }
