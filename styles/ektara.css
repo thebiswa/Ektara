@@ -33,6 +33,12 @@ body {
 .noscroll {
     overflow: hidden;
 }
+/* For placing image in the centre*/
+.centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 a {
     text-decoration: none;
 }
@@ -177,11 +183,11 @@ a {
 
 /* Footer of every page*/
 .footer {
-    text-align: center;
     background-color: grey;
     padding: 1em;
 }
 .footertext {
+    text-align: center;
     font-size: x-small;
     padding-bottom: 1em;
 }
