@@ -49,7 +49,7 @@ a {
     justify-content: space-between;
     position: sticky;
     transition: top 0.4s;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .navmenu {
     list-style: none;
