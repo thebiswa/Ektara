@@ -33,7 +33,6 @@ p.about {
 .imageoncard {
     width: 100%;
     aspect-ratio: 2;
-    background-color: blanchedalmond;
 }
 @media screen and (max-width: 960px) {
     .cards {
@@ -74,4 +73,10 @@ p.about {
     padding: 1em;
     padding-top: 0;
     color: rgb(0, 0, 0);
+}
+.endofthecards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
