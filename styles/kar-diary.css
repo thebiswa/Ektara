@@ -1,0 +1,15 @@
+.diarypagebreak {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+}
+.normaltext {
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-indent: 1em;
+}
+.noindent {
+    text-indent: 0;
+}
