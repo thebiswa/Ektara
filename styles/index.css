@@ -22,11 +22,13 @@ p.about {
     height: 24rem;
     margin: 2em;
     border-radius: 1rem;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.374);
+    border-style: solid;
+    border-width: 0.01em;
+    border-color: gray;
     transition: 0.3s;
 }
 .cards:hover {
-    box-shadow: 2px 2px 5px 1px rgb(255, 213, 0);
+    border-color: black;
 }
 .imageoncard {
     width: 100%;
