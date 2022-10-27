@@ -179,6 +179,7 @@ a {
 .footer {
     text-align: center;
     background-color: darkgrey;
+    padding: 1em;
 }
 .footertext {
     font-size: x-small;
