@@ -19,7 +19,7 @@ p.about {
 .cards {
     background: #ffffff;
     width: 16rem;
-    height: 24rem;
+    height: 25rem;
     margin: 2em;
     border-radius: 1rem;
     border-style: solid;
@@ -37,7 +37,7 @@ p.about {
 @media screen and (max-width: 960px) {
     .cards {
         width: 14rem;
-        height: 22rem;
+        height: 24rem;
         
     }
 }
@@ -45,14 +45,14 @@ p.about {
 @media screen and (max-width: 850px) {
     .cards {
         width: 15rem;
-        height: 22rem;
+        height: 24rem;
         
     }
 }
 @media screen and (max-width: 600px) {
     .cards {
         width: 18rem;
-        height: 25rem;
+        height: fit-content;
     }
 }
 @media screen and (max-width: 300px) {
@@ -78,5 +78,6 @@ p.about {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.5em;
     width: 50%;
 }
