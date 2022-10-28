@@ -34,6 +34,33 @@ p.about {
     width: 100%;
     aspect-ratio: 2;
 }
+
+.titleofcard {
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    text-indent: 0.5rem;
+    background: rgb(239, 239, 239);
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 0;
+}
+.textoncard {
+    text-align: justify;
+    padding: 0.5em;
+    padding-top: 0;
+    color: rgb(0, 0, 0);
+}
+.endofthecards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    width: 50%;
+}
+
 @media screen and (max-width: 960px) {
     .cards {
         width: 25%;
@@ -50,27 +77,17 @@ p.about {
 }
 @media screen and (max-width: 600px) {
     .cards {
-        width: 75%;
+        width: 70%;
         height: fit-content;
+        margin: 1em;
+        border-style: none;
     }
-}
-.titleofcard {
-    font-weight: bolder;
-    font-size: 1.1rem;
-    padding: 0;
-    color: rgb(0, 0, 0);
-    text-indent: 1rem;
-}
-.textoncard {
-    text-align: justify;
-    padding: 1em;
-    padding-top: 0;
-    color: rgb(0, 0, 0);
-}
-.endofthecards {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5em;
-    width: 50%;
+    .titleofcard {
+        background: none;
+        text-decoration: underline;
+        text-indent: 0;
+    }
+    .textoncard {
+        padding: 0;
+    }
 }
