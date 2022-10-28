@@ -98,3 +98,23 @@ p.about {
         margin-bottom: 2em;
     }
 }
+.kobitaindexpage {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.readmorekobita {
+    text-align: center;
+    text-decoration: none;
+    font-family: normaltext;
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-style:solid;
+    border-width: 0.001em;
+    border-radius: 0.5em;
+    border-color: black;
+}
+.readmorekobita:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
