@@ -185,6 +185,7 @@ a {
 .footer {
     background-color:whitesmoke;
     padding: 1em;
+    margin-top: 4em;
 }
 .footertext {
     text-align: center;
