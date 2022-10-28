@@ -81,6 +81,8 @@ p.about {
         width: 70%;
         height: fit-content;
         margin: 0;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
         border-style: none;
     }
     .titleofcard {
@@ -90,5 +92,9 @@ p.about {
     }
     .textoncard {
         padding: 0;
+    }
+    .endofthecards {
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 }
