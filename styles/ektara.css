@@ -71,13 +71,9 @@ a {
 
 .navmenu li a:hover {
     cursor: pointer;
-    text-decoration: underline #000000;
 }
 .navmenu li a.active {
-    color: #ffff00;
-    background-color: #000000;
-    padding: 0rem 1rem 0rem 1rem;
-    border-radius: 1em;
+    text-decoration: underline;
 }
 .togglebutton {
     display: none;
@@ -113,7 +109,6 @@ a {
 .quoteonmenubar {
     display: none;
     font-size:smaller;
-    color: #ff0000;
     font-family: quotes;
     padding-top: 4em;
 }
@@ -146,10 +141,10 @@ a {
         font-size:1.2rem;
     }
     .navmenu li a:hover {
-        text-decoration:underline;
+        text-decoration:none;
     }
     .navmenu li a.active {
-        text-decoration: none;
+        text-decoration: underline;
     }
     .navmenu[data-visible="true"] {
         transform: translateX(0%);
