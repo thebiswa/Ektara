@@ -158,13 +158,12 @@ p.about {
     aspect-ratio:2;
 }
 .readmore {
-    display: block;
+    cursor: pointer;
     color: black;
     font-style: italic;
     font-size: smaller;
-    text-align: right;
     text-decoration: underline;
-    margin-right: 1em;
+    margin-left: 80%;
 }
 .imagebetweensections {
     display: block;
