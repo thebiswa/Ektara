@@ -141,7 +141,6 @@ p.about {
     border-radius: 0.5em;
     width: 10em;
     height: 14em;
-    position: relative;
 }
 .othersectiontitle {
     margin: 0.2em;
@@ -163,10 +162,7 @@ p.about {
     font-size: smaller;
     text-align: right;
     text-decoration: underline;
-    position:absolute;
-    margin: 0;
-    bottom: 0.2em;
-    right: 0.5em;
+    margin-right: 1em;
 }
 .imagebetweensections {
     display: block;
@@ -174,5 +170,10 @@ p.about {
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    width: 25%;
+    width: 10%;
+}
+@media (max-width: 650px) {
+    .imagebetweensections {
+        width: 25%;
+    }
 }
