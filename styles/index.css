@@ -135,7 +135,7 @@ p.about {
     flex-wrap: wrap;
 }
 .othersectioncards {
-    background-color: rgb(232, 232, 232);
+    background-color: whitesmoke;
     padding: 0em;
     margin: 1em;
     border-radius: 0.5em;
@@ -159,6 +159,8 @@ p.about {
     aspect-ratio:2;
 }
 .readmore {
+    font-style: italic;
+    font-size: smaller;
     text-align: right;
     text-decoration: underline;
     position:absolute;
