@@ -19,7 +19,7 @@ p.about {
 .cards {
     background: #ffffff;
     width: 16rem;
-    height: 25rem;
+    height: 27rem;
     margin: 2em;
     border-radius: 1rem;
     border-style: solid;
@@ -163,7 +163,7 @@ p.about {
     font-style: italic;
     font-size: smaller;
     text-decoration: underline;
-    margin-left: 80%;
+    margin-left: 75%;
 }
 .imagebetweensections {
     display: block;
