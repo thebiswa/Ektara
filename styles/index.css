@@ -165,6 +165,11 @@ p.about {
     text-decoration: underline;
     margin-left: 75%;
 }
+@media (max-width:270px) {
+    .readmore{
+        margin: 0;
+    } 
+}
 .imagebetweensections {
     display: block;
     margin-left: auto;
