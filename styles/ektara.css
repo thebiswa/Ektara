@@ -41,7 +41,6 @@ body {
 }
 a {
     text-decoration: none;
-    display: block;
 }
 .flex {
     display: flex;
