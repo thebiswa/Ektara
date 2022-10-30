@@ -36,16 +36,16 @@ p.about {
 }
 
 .titleofcard {
+    display: inline-block;
     font-weight: bolder;
     font-size: 1.1rem;
-    padding: 0.5em;
     color: rgb(0, 0, 0);
     text-indent: 0.5rem;
-    background: rgb(239, 239, 239);
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    margin-top: 0;
+    margin-top: 1em;
+    text-decoration: underline;
 }
 .textoncard {
     text-align: justify;
@@ -86,8 +86,6 @@ p.about {
         border-style: none;
     }
     .titleofcard {
-        background: none;
-        text-decoration: underline;
         text-indent: 0;
     }
     .textoncard {
