@@ -66,14 +66,12 @@ p.about {
 @media screen and (max-width: 960px) {
     .cards {
         width: 25%;
-        height: 26em;
     }
 }
 
 @media screen and (max-width: 850px) {
     .cards {
         width: 36%;
-        height: 27em;
         
     }
 }
