@@ -1,0 +1,13 @@
+/* The main Golpo page, contains the name of the Stories*/
+
+
+
+/* The Golpo page, contains the story*/
+
+@media (min-width:800px) {
+    .story{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+    
+}
