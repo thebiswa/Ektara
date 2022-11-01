@@ -19,13 +19,14 @@ p.about {
 .cards {
     background: #ffffff;
     width: 16em;
-    height: 27em;
+    height: auto;
     margin: 2em;
     border-radius: 1rem;
     border-style: solid;
     border-width: 0.01em;
     border-color: gray;
     transition: 0.3s;
+    position: relative;
 }
 .cards:hover {
     border-color: black;
@@ -52,16 +53,16 @@ p.about {
     padding: 0.5em;
     padding-top: 0;
     color: rgb(0, 0, 0);
+    padding-bottom: 2.5em;
 }
 .endofthecards {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    position: absolute;
     width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
 }
-
 @media screen and (max-width: 960px) {
     .cards {
         width: 25%;
@@ -80,20 +81,13 @@ p.about {
     .cards {
         width: 70%;
         height: fit-content;
-        margin: 0;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
         border-style: none;
     }
     .titleofcard {
         text-indent: 0;
     }
-    .textoncard {
-        padding: 0;
-    }
     .endofthecards {
-        margin-top: 1em;
-        margin-bottom: 2em;
+        width: 40%;
     }
 }
 .kobitaindexpage {
@@ -162,7 +156,9 @@ p.about {
     font-style: italic;
     font-size: smaller;
     text-decoration: underline;
-    margin-left: 75%;
+    position: absolute;
+    right: 1em;
+    bottom: 2.5em;
 }
 .readmoreothersection {
     position: absolute;
