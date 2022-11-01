@@ -53,7 +53,7 @@ p.about {
     padding: 0.5em;
     padding-top: 0;
     color: rgb(0, 0, 0);
-    padding-bottom: 2.5em;
+    padding-bottom: 4em;
 }
 .endofthecards {
     position: absolute;
@@ -156,7 +156,7 @@ p.about {
     text-decoration: underline;
     position: absolute;
     right: 1em;
-    bottom: 2.5em;
+    bottom: 4em;
 }
 .readmoreothersection {
     position: absolute;
