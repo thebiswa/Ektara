@@ -80,6 +80,7 @@ p.about {
         width: 70%;
         height: fit-content;
         border-style: none;
+        margin: 0;
     }
     .titleofcard {
         text-indent: 0;
