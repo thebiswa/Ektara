@@ -139,6 +139,7 @@ p.about {
     border-radius: 0.5em;
     width: 10em;
     height: 14em;
+    position: relative;
 }
 .othersectiontitle {
     margin: 0.2em;
@@ -162,6 +163,13 @@ p.about {
     font-size: smaller;
     text-decoration: underline;
     margin-left: 75%;
+}
+.readmoreothersection {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 1em;
+    bottom: 0.5em;
 }
 @media (max-width:270px) {
     .readmore{
