@@ -42,7 +42,7 @@ function screenSizeonresizewindow() {
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
         var element = document.getElementById("body");
-        element.classList.toggle("noscroll");
+        element.classList.remove("noscroll");
       }
     /* This section is the solution of the problem Problem(1) End*/
   }
@@ -55,7 +55,7 @@ function screenSizeonresizewindow() {
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
         var element = document.getElementById("body");
-        element.classList.toggle("noscroll");
+        element.classList.add("noscroll");
       }
     /* This section is the solution of the problem Problem(1) End*/
 
