@@ -113,6 +113,9 @@ const toggleButton = document.querySelector(".togglebutton")
 
 toggleButton.addEventListener("click",() => {
   const visibility = navMenu.getAttribute('data-visible');
+      
+  document.getElementById("navbar").style.top = "0";
+  
   console.log(device);
 
   /* Block scroll when sidebar is open ( This section has a problem: Problem(1).
@@ -134,8 +137,7 @@ toggleButton.addEventListener("click",() => {
   else if(visibility === "true") {
     navMenu.setAttribute("data-visible",false);
     
-    
-    document.getElementById("navbar").style.top = "0";
+
     var noanimationonnavbar = document.getElementById("navbar")
     noanimationonnavbar.classList.remove("navbarnotransition");
 
