@@ -31,7 +31,7 @@ body {
 }
 /* For stopping the scroll when sidebar is open in mobile view*/
 .noscroll {
-    overflow: hidden;
+    overflow: auto;
 }
 /* For placing image in the centre*/
 .centerimage {
