@@ -133,7 +133,9 @@ toggleButton.addEventListener("click",() => {
   }
   else if(visibility === "true") {
     navMenu.setAttribute("data-visible",false);
-            
+    
+    
+    document.getElementById("navbar").style.top = "0";
     var noanimationonnavbar = document.getElementById("navbar")
     noanimationonnavbar.classList.remove("navbarnotransition");
 
