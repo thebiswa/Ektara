@@ -37,15 +37,13 @@ function screenSizeonresizewindow() {
       sizeoftheScreen.setAttribute("userdevice",'desktop');
       console.log('The user has made the screen wider(screen width >650px)');
 
+      var staticnavbar = document.getElementById("navbar");
+      staticnavbar.classList.add("staticnav");
+
     /* This section is the solution of the problem Problem(1)*/
     const navMenu = document.querySelector(".navmenu");
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
-        
-        var noanimationonnavbar = document.getElementById("navbar")
-        noanimationonnavbar.classList.remove("navbarnotransition");
-
-
         var element = document.getElementById("body");
         element.classList.remove("noscroll");
       }
@@ -59,16 +57,7 @@ function screenSizeonresizewindow() {
     const navMenu = document.querySelector(".navmenu");
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
-
-
-        var noanimationonnavbar = document.getElementById("navbar")
-        noanimationonnavbar.classList.add("navbarnotransition");
-
-
-        document.getElementById("navbar").style.top = "0";
-        
-        var element = document.getElementById("body");
-        element.classList.add("noscroll");
+        element.classList.remove("noscroll");
       }
     /* This section is the solution of the problem Problem(1) End*/
 
@@ -81,16 +70,20 @@ function screenSizeonresizewindow() {
 
 /* SECTION B */
 
-/* Sticky navigation bar */
+/* Sticky navigation bar only for mobile view/// Static navigation bar for desktop */
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+    var w = window.outerWidth;
+    if(w<=650) {
+      var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
-  } else {
+    } else {
     document.getElementById("navbar").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
+    }
 }
 
 /* SECTION B ends*/
@@ -134,11 +127,6 @@ toggleButton.addEventListener("click",() => {
   }
   else if(visibility === "true") {
     navMenu.setAttribute("data-visible",false);
-    
-
-    var noanimationonnavbar = document.getElementById("navbar")
-    noanimationonnavbar.classList.remove("navbarnotransition");
-
   }
 
   console.log(visibility)
