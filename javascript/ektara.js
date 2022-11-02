@@ -72,7 +72,7 @@ function screenSizeonresizewindow() {
 /* SECTION B */
 
 /* Sticky navigation bar only for mobile view/// Static navigation bar for desktop */
-
+/*
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var w = window.outerWidth;
@@ -86,7 +86,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
     }
 }
-
+*/
 /* SECTION B ends*/
 
 /* SECTION C */
