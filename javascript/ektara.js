@@ -71,12 +71,25 @@ function screenSizeonresizewindow() {
 
 /* SECTION B */
 
-/* Sticky navigation bar only for mobile view/// Static navigation bar for desktop */
-/*
+/* Sticky navigation bar/// Static navigation bar when sidebar is open or data-visible(attribute in navmenu) is set to true */
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-    var w = window.outerWidth;
-    if(w<=650) {
+  console.log('scroll');
+  const navMenu = document.querySelector(".navmenu");
+  const visibility = navMenu.getAttribute('data-visible');
+  console.log(visibility);
+
+  if(visibility === "true") {
+      var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+    }
+    else {
       var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -86,7 +99,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
     }
 }
-*/
+
 /* SECTION B ends*/
 
 /* SECTION C */
