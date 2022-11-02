@@ -46,6 +46,7 @@ function screenSizeonresizewindow() {
         noanimationonnavbar.classList.remove("navbarnotransition");
 
 
+        document.getElementById("navbar").style.top = "0";
         var element = document.getElementById("body");
         element.classList.remove("noscroll");
       }
