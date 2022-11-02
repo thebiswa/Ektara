@@ -71,11 +71,13 @@ function screenSizeonresizewindow() {
 
 /* SECTION B */
 
-/* Sticky navigation bar/// Static navigation bar when sidebar is open or data-visible(attribute in navmenu) is set to true */
+/* Sticky navigation bar/// Static navigation bar(basically for desktop view: when sidebar is open and the user uses his/her mobile in horizontal mode.
+ in this way when the user switches back to vertical mode the sidebar is still open and the button to close sidebar is not disturbed at all)
+ when sidebar is open or data-visible(attribute in navmenu) is set to true */
 
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  console.log('scroll');
+  window.onscroll = function() {
+  //console.log('scroll');
   const navMenu = document.querySelector(".navmenu");
   const visibility = navMenu.getAttribute('data-visible');
   console.log(visibility);
@@ -85,11 +87,12 @@ window.onscroll = function() {
     if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     } else {
-    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").style.top = "0";
   }
   prevScrollpos = currentScrollPos;
-    }
-    else {
+  }
+
+  else {
       var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -97,7 +100,7 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
-    }
+  }
 }
 
 /* SECTION B ends*/
@@ -105,7 +108,7 @@ window.onscroll = function() {
 /* SECTION C */
 
   /* Animated hamburger menu*/
-function myFunction(x) {
+  function myFunction(x) {
     x.classList.toggle("change");
   }
 
@@ -120,8 +123,13 @@ const toggleButton = document.querySelector(".togglebutton")
 
 toggleButton.addEventListener("click",() => {
   const visibility = navMenu.getAttribute('data-visible');
-
-  console.log(device);
+    
+  if(visibility ==="false") {
+    navMenu.setAttribute("data-visible",true);
+  }
+  else if(visibility === "true") {
+    navMenu.setAttribute("data-visible",false);
+  }
 
   /* Block scroll when sidebar is open ( This section has a problem: Problem(1).
   It alone creates a problem but the problem is solved above SECTION A2) */
@@ -135,14 +143,6 @@ toggleButton.addEventListener("click",() => {
   scroll the page anymore. To solve this problem using the screen resize function*/
 
   /* Block scroll when sidebar is open */
-  
-  if(visibility ==="false") {
-    navMenu.setAttribute("data-visible",true);
-  }
-  else if(visibility === "true") {
-    navMenu.setAttribute("data-visible",false);
-  }
-
   console.log(visibility)
 } );
 /* In mobile view - Open and close the sidebar using hamburger menu option */
