@@ -41,6 +41,11 @@ function screenSizeonresizewindow() {
     const navMenu = document.querySelector(".navmenu");
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
+        
+        var noanimationonnavbar = document.getElementById("navbar")
+        noanimationonnavbar.classList.remove("navbarnotransition");
+
+
         var element = document.getElementById("body");
         element.classList.remove("noscroll");
       }
@@ -54,6 +59,13 @@ function screenSizeonresizewindow() {
     const navMenu = document.querySelector(".navmenu");
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
+
+
+        var noanimationonnavbar = document.getElementById("navbar")
+        noanimationonnavbar.classList.add("navbarnotransition");
+
+
+        document.getElementById("navbar").style.top = "0";
         var element = document.getElementById("body");
         element.classList.add("noscroll");
       }
@@ -120,6 +132,10 @@ toggleButton.addEventListener("click",() => {
   }
   else if(visibility === "true") {
     navMenu.setAttribute("data-visible",false);
+            
+    var noanimationonnavbar = document.getElementById("navbar")
+    noanimationonnavbar.classList.remove("navbarnotransition");
+
   }
 
   console.log(visibility)

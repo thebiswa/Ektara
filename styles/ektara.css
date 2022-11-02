@@ -59,6 +59,9 @@ a {
     padding: 1rem;
     z-index: 9999999;
 }
+.navbarnotransition {
+    transition: none;
+}
 .navmenu {
     list-style: none;
     margin: 0;
