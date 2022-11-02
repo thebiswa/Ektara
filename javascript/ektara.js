@@ -46,7 +46,6 @@ function screenSizeonresizewindow() {
         noanimationonnavbar.classList.remove("navbarnotransition");
 
 
-        document.getElementById("navbar").style.top = "0";
         var element = document.getElementById("body");
         element.classList.remove("noscroll");
       }
@@ -67,6 +66,7 @@ function screenSizeonresizewindow() {
 
 
         document.getElementById("navbar").style.top = "0";
+        
         var element = document.getElementById("body");
         element.classList.add("noscroll");
       }
@@ -113,9 +113,7 @@ const toggleButton = document.querySelector(".togglebutton")
 
 toggleButton.addEventListener("click",() => {
   const visibility = navMenu.getAttribute('data-visible');
-      
-  document.getElementById("navbar").style.top = "0";
-  
+
   console.log(device);
 
   /* Block scroll when sidebar is open ( This section has a problem: Problem(1).
