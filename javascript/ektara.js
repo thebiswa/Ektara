@@ -57,7 +57,8 @@ function screenSizeonresizewindow() {
     const navMenu = document.querySelector(".navmenu");
     const visibility = navMenu.getAttribute('data-visible');
       if(visibility ==="true") {
-        element.classList.remove("noscroll");
+        var element = document.getElementById("body");
+        element.classList.add("noscroll");
       }
     /* This section is the solution of the problem Problem(1) End*/
 
