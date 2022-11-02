@@ -58,9 +58,7 @@ a {
     transition: top 0.4s;
     padding: 1rem;
     z-index: 9999999;
-}
-.navbarnotransition {
-    transition: none;
+    top:0;
 }
 .navmenu {
     list-style: none;
