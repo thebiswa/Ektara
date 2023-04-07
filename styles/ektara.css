@@ -134,6 +134,7 @@ a {
         padding: min(25vh, 8rem) 0rem;
         transform: translateY(-100%);
         transition: 2s ease-in-out;
+        transition: all 2s cubic-bezier(0.47, 0, 0.745, 0.715);
     }
     .navmenuspacebetween {
         gap: var(--gap, 1rem);
