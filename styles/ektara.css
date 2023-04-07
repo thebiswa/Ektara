@@ -129,11 +129,12 @@ a {
         height: 100%;
         z-index: 1000;
         inset: 0 0 0 0%;
-        background-color: #0099ff;
+        background-color: #d0ff00;
         flex-direction: column;
         padding: min(25vh, 8rem) 0rem;
         transform: translateY(-100%);
         transition: 2s ease-in-out;
+        transition: all 0.5s cubic-bezier(.47,1.64,.41,.8);
 
     }
     .navmenuspacebetween {
@@ -142,7 +143,6 @@ a {
     .navmenu li a{
         font-size:1.2rem;
         /* newly added */
-        transition: all 2s cubic-bezier(.47,1.64,.41,.8);
 
     }
     .navmenu li a:hover {
