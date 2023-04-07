@@ -134,14 +134,8 @@ a {
         padding: min(25vh, 8rem) 0rem;
         transform: translateY(-100%);
         /* transition: 0.2s ease-in-out; */
-        
-    }
-    .okay {
-        transform: translateY(-100%);
         transition: ease-in-out 2s cubic-bezier(.47,1.64,.41,.8);
-    }
-    .okay[data-visible="true"] {
-        transform: translateY(-0%);
+        
     }
     .navmenuspacebetween {
         gap: var(--gap, 1rem);
