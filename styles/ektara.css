@@ -129,12 +129,12 @@ a {
         height: 100%;
         z-index: 1000;
         inset: 0 0 0 0%;
-        background-color: #00ff2a;
+        background-color: #0099ff;
         flex-direction: column;
         padding: min(25vh, 8rem) 0rem;
         transform: translateY(-100%);
         transition: 2s ease-in-out;
-        transition: all 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+        transition: all 2s cubic-bezier(.47,1.64,.41,.8);
     }
     .navmenuspacebetween {
         gap: var(--gap, 1rem);
