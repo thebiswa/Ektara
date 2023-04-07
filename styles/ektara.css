@@ -132,7 +132,7 @@ a {
         background-color: #fbff00;
         flex-direction: column;
         padding: min(25vh, 8rem) 0rem;
-        transform: translateY(100%);
+        transform: translateY(-100%);
         transition: 0.2s ease;
     }
     .navmenuspacebetween {
@@ -148,7 +148,7 @@ a {
         text-decoration: underline;
     }
     .navmenu[data-visible="true"] {
-        transform: translateY(0%);
+        transform: translateY(-0%);
     }
     .togglebutton {
         display: block;
