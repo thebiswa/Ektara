@@ -129,13 +129,23 @@ a {
         height: 100%;
         z-index: 1000;
         inset: 0 0 0 0%;
-        background-color: #00ff73;
+        background-color: #ffffff;
         flex-direction: column;
         padding: min(25vh, 8rem) 0rem;
         transform: translateY(-100%);
         /* transition: 0.2s ease-in-out; */
         transition: all 2s cubic-bezier(.47,1.64,.41,.8);
+
+
+        display: none;
         
+    }
+    .navmenu[data-visible="true"] {
+        transform: translateY(-0%);
+
+
+        
+        display: flex;
     }
     .navmenuspacebetween {
         gap: var(--gap, 1rem);
@@ -150,9 +160,6 @@ a {
     }
     .navmenu li a.active {
         text-decoration: underline;
-    }
-    .navmenu[data-visible="true"] {
-        transform: translateY(-0%);
     }
     .togglebutton {
         display: block;
